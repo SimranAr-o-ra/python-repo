@@ -1,0 +1,14 @@
+def prime(n):
+    c=0
+    for i in range(2,n):
+        if(n%i==0):
+            c+=1
+    return c
+n=int(input("Enter the Number"))
+m=int(input("Enter another Number"))
+a =prime(n)
+b =prime(m)
+if (n-m==2 or m-n==2) and a==0 and b==0:
+    print(f"Nos. is Twin Prime {n} & {m}")
+else:
+    print("Nos. are not twin prime")
