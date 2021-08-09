@@ -1,0 +1,9 @@
+def palin(n):
+    s=str(n)
+    if s==s[::-1]:
+        print(f"{n} is Palindrome")
+    else:
+        print("Not Palindrome")
+
+n=int(input("Enter the number"))
+palin(n)
