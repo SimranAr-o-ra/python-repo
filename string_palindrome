@@ -1,0 +1,8 @@
+def palin(s):
+    if s==s[::-1]:
+        print(f"{s} is palindrome string.")
+    else:
+        print(f"not a palindrome string")
+
+s=input("Enter a string")
+palin(s)
